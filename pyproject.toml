@@ -10,7 +10,6 @@ python = "^3.12"
 dronekit = "^2.9.2"
 flask = "^3.1.0"
 pydantic = "^1.10.0"
-flask-socketio = "^5.5.1"
 
 
 [build-system]

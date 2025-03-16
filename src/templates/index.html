@@ -72,6 +72,7 @@
     </form>
 
     <div class="testing">
+        <label for="test-btn">Тестирование запускается с последними введенными координатами</label>
         <button id="test-btn">Запустить тестирование</button>
         <div id="test-results"></div>
     </div>
@@ -92,9 +93,9 @@
             })
             if (response.ok) {
                 const result = await response.json();
-                alert(`Кооридинаты успешно отправлены`);
+                alert(`${result.status}`);
             } else {
-                alert('Ошибка отправки');
+                alert(`${result.status}`);
             }
         });
 
